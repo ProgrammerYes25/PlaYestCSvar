@@ -63,7 +63,10 @@ namespace PlaYestCSvar
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            musicBindingSource.DataSource = from music in musicList
+                                            where music.mood == "잔잔한"
+                                            orderby music.album ascending
+                                            select music;
         }
 
         private void button5_Click(object sender, EventArgs e)
