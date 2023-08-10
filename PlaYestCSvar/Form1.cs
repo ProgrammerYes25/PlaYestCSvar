@@ -17,6 +17,10 @@ namespace PlaYestCSvar
             InitializeComponent();
         }
 
+        static private List<music> musicList = new List<music>{
+            new music(){title ="물만난 물고기", artist="악뮤(akmu)", album="항해", year=2019, mood="청량"},
+        };
+
         private void button1_Click(object sender, EventArgs e)
         {
 
