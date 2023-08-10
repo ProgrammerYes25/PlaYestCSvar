@@ -77,15 +77,15 @@ namespace PlaYestCSvar
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            musicBindingSource.DataSource = from music in musicList
+                                            orderby music.artist ascending
+                                            select music;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            musicBindingSource.DataSource = from music in musicList
-                                            orderby music.artist ascending
-                                            select music;
+           
         }
     }
 }
