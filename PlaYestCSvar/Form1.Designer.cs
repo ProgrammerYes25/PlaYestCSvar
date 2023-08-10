@@ -37,12 +37,12 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.musicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.artistDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.albumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musicBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -84,7 +84,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 55);
             this.button2.TabIndex = 2;
-            this.button2.Text = "발매년도별 정렬";
+            this.button2.Text = "최신년도별 정렬";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -136,10 +136,6 @@
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "플레이리스트";
             // 
-            // musicBindingSource
-            // 
-            this.musicBindingSource.DataSource = typeof(PlaYestCSvar.Music);
-            // 
             // titleDataGridViewTextBoxColumn
             // 
             this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
@@ -174,6 +170,10 @@
             this.moodDataGridViewTextBoxColumn.HeaderText = "mood";
             this.moodDataGridViewTextBoxColumn.Name = "moodDataGridViewTextBoxColumn";
             this.moodDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // musicBindingSource
+            // 
+            this.musicBindingSource.DataSource = typeof(PlaYestCSvar.Music);
             // 
             // Form1
             // 
